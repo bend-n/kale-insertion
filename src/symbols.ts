@@ -1522,6 +1522,7 @@ const latexOpMap: Map<string, string> = new Map([
 	["::", "∷"],
 	["==", "≡"],
 	["===", "≣"],
+	["!=", "≢"],
 	["=/=", "≢"],
 	["/=", "≠"],
 	["~==", "≅"],
@@ -4834,5 +4835,26 @@ const emojiMap = new Map([
 	[":region:zw", "🇿🇼"],
 ])
 
+const kaleMap = new Map([
+	["flip", "🔀"],
+	["zap", "⤵️"],
+	["with", "⬇️"],
+	["range", "⏫"],
+	["len", "📏"],
+	["group", "👩‍👩‍👧‍👧"],
+	["open", "📂"],
+	["del", "❎"],
+	["sort", "📶"],
+	["mask", "🔓"],
+	["index", "🔒"],
+	["append", "💽"],
+	["arrayn", "⎦"],
+	["xor", "⊕"],
+	["reduce", "↘️"],
+	["fold", "⏭️"],
+	["map", "🗺"],
+	["debug", "🧐"],
+]);
 
-export const symbols = new Map([...latexOpMap, ...latexFontMap, ...emojiMap])
+
+export const symbols = new Map([...latexOpMap, ...latexFontMap, ...emojiMap, ...kaleMap])
